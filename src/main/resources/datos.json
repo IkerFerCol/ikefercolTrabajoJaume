@@ -1,0 +1,26 @@
+{
+  "laliga": [
+    {
+      "equipo": "Real Madrid",
+      "lugar": "Madrid",
+      "mejor_jugador": "Vinícius Júnior"
+    },
+    {
+      "equipo": "FC Barcelona",
+      "lugar": "Barcelona",
+      "mejor_jugador": "Robert Lewandowski"
+    }
+  ],
+  "premierleague": [
+    {
+      "equipo": "Manchester City",
+      "lugar": "Manchester",
+      "mejor_jugador": "Erling Haaland"
+    },
+    {
+      "equipo": "Arsenal",
+      "lugar": "Londres",
+      "mejor_jugador": "Bukayo Saka"
+    }
+  ]
+}
