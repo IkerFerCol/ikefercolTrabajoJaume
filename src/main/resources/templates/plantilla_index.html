@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Ligas Internacionales</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<header>
+  <h1 th:text="${nombre}"></h1>
+  <h2 th:text="${tema}"></h2>
+</header>
+
+<div>
+  <h3>La Liga</h3>
+  <ul>
+    <li th:each="equipo : ${laliga}">
+      <a th:href="'equipo/' + ${equipo.equipo} + '.html'" th:text="${equipo.equipo}"></a>
+    </li>
+  </ul>
+
+  <h3>Premier League</h3>
+  <ul>
+    <li th:each="equipo : ${premierleague}">
+      <a th:href="'equipo/' + ${equipo.equipo} + '.html'" th:text="${equipo.equipo}"></a>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

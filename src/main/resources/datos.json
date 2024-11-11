@@ -1,19 +1,24 @@
 {
   "laliga": [
     {
-      "equipo": "Real Madrid",
+      "equipo": "Real_Madrid",
       "lugar": "Madrid",
       "mejor_jugador": "Vinícius Júnior"
     },
     {
-      "equipo": "FC Barcelona",
+      "equipo": "FC_Barcelona",
       "lugar": "Barcelona",
       "mejor_jugador": "Robert Lewandowski"
+    },
+    {
+      "equipo": "Villarreal_CF",
+      "lugar": "Vila-real",
+      "mejor_jugador": "Alex Baena"
     }
   ],
   "premierleague": [
     {
-      "equipo": "Manchester City",
+      "equipo": "Manchester_City",
       "lugar": "Manchester",
       "mejor_jugador": "Erling Haaland"
     },
@@ -21,6 +26,11 @@
       "equipo": "Arsenal",
       "lugar": "Londres",
       "mejor_jugador": "Bukayo Saka"
+    },
+    {
+      "equipo": "Manchester_United",
+      "lugar": "Manchester",
+      "mejor_jugador": "Bruno Fernandes"
     }
   ]
 }
