@@ -1,66 +1,100 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(#f8fff4, #a1a79d);
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #2d3a6b;
-    color: white;
+    background-color: #1E1E1E;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 header h1 {
-    font-size: 3em;
-    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
 header h2 {
     font-size: 1.5em;
-    margin: 0;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+div {
+    margin: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h3 {
-    font-size: 2em;
-    color: #2d3a6b;
-    margin-top: 30px;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
+    text-align: center;
+    text-decoration-color: coral;
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
 li {
-    margin: 10px 0;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+li img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
 }
 
 a {
     text-decoration: none;
-    color: #2d3a6b;
+    color: #007BFF;
     font-size: 1.2em;
-    transition: color 0.3s;
+    padding: 5px;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #1f2951;
+    color: red;
 }
 
-
-div {
-    margin: 20px;
+li {
+    margin-bottom: 10px;
 }
 
-
-footer {
-    background-color: #2d3a6b;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+html, body {
+    height: 100%;
 }

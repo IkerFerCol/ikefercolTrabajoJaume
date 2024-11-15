@@ -9,11 +9,14 @@ public class Equipo {
     private String lugar;
     @JsonProperty("mejor_jugador")
     private String mejorJugador;
+    @JsonProperty("imagen")
+    private String imagen;
 
-    public Equipo(String equipo, String lugar, String mejorJugador) {
+    public Equipo(String equipo, String lugar, String mejorJugador, String imagen) {
         this.equipo = equipo;
         this.lugar = lugar;
         this.mejorJugador = mejorJugador;
+        this.imagen = imagen;
     }
 
     public Equipo(){}
@@ -42,12 +45,21 @@ public class Equipo {
         this.mejorJugador = mejorJugador;
     }
 
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
     @Override
     public String toString() {
         return "Equipo{" +
                 "equipo='" + equipo + '\'' +
                 ", lugar='" + lugar + '\'' +
                 ", mejorJugador='" + mejorJugador + '\'' +
+                ", imagen='" + imagen + '\'' +
                 '}';
     }
 }
