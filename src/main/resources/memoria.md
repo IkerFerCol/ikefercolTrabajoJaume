@@ -32,17 +32,21 @@ Este proyecto consiste en un generador de páginas web con la temática de los m
 
 Es un archivo de configuración usado para almacenar parámetros de configuración de una aplicación estructurada y fácil de leer. Este es mi CONFIG.INI del proyecto:
 
+[seccion]
+nombre = Futbol Internacional
+tema = Competiciones futbolisticas
+
 ---
 
 ### 2.2 JSON
 
-El archivo JSON contiene los datos que tienen las ligas con sus equipos y sus mejores jugadores. Si añades un equipo, también se generará un archivo HTML del mismo. Este es mi JSON del proyecto:
+El archivo JSON contiene los datos que tienen las ligas con sus equipos y sus mejores jugadores. Si añades un equipo, también se generará un archivo HTML del mismo.
 
 ---
 
 ### 2.3 SCHEMA
 
-Es un conjunto de reglas que define la estructura y la organización de un conjunto de datos. Se utiliza en el contexto de bases de datos y lenguajes de marcado como JSON y XML. Este es mi SCHEMA del proyecto:
+Es un conjunto de reglas que define la estructura y la organización de un conjunto de datos. Se utiliza en el contexto de bases de datos y lenguajes de marcado como JSON y XML.
 
 ---
 
@@ -103,6 +107,7 @@ Es un formato utilizado para compartir información actualizada sobre los mejore
 
 ### 4.2 CAPTURAS DE LAS PÁGINAS
 
-*Incluye capturas de pantalla de las páginas generadas.*
+![Screenshot_20241204_101009.png](capturas/Screenshot_20241204_101009.png)
+![Screenshot_20241204_101035.png](capturas/Screenshot_20241204_101035.png)
 
 ---
