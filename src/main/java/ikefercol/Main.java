@@ -63,7 +63,43 @@ public class Main {
             String filename = "src/main/resources/Webs/equipo/" + e.getEquipo().replaceAll("\\s+", "_") + ".html";
             escribirHTML(equipoTemplate, filename);
         }
+
+        GenerarRssXML(liga, "src/main/resources/rss.xml", nombreconfig, temaconfig);
     }
+
+    public static void GenerarRssXML(Liga liga, String rutarss, String nombre, String descripcion) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutarss))) {
+            writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+            writer.write("<rss version=\"2.0\">\n");
+            writer.write("<channel>\n");
+            writer.write("<title>" + nombre + "</title>\n");
+            writer.write("<link>src/main/resources/Webs/index.html</link>\n");
+            writer.write("<description>" + descripcion + "</description>\n");
+
+            for (Equipo equipo : liga.getLaliga()) {
+                writer.write("<item>\n");
+                writer.write("<title>" + equipo.getEquipo() + "</title>\n");
+                writer.write("<link>src/main/resources/Webs/equipo/" + equipo.getEquipo().replaceAll("\\s+", "_") + ".html</link>\n");
+                writer.write("<description>Mejor jugador: " + equipo.getMejorJugador() + "</description>\n");
+                writer.write("</item>\n");
+            }
+
+            for (Equipo equipo : liga.getPremierleague()) {
+                writer.write("<item>\n");
+                writer.write("<title>" + equipo.getEquipo() + "</title>\n");
+                writer.write("<link>src/main/resources/Webs/equipo/" + equipo.getEquipo().replaceAll("\\s+", "_") + ".html</link>\n");
+                writer.write("<description>Mejor jugador: " + equipo.getMejorJugador() + "</description>\n");
+                writer.write("</item>\n");
+            }
+
+            writer.write("</channel>\n");
+            writer.write("</rss>\n");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            throw new RuntimeException("Error al generar el archivo RSS", e);
+        }
+    }
+
 
     public static void escribirHTML(String html, String nombrefichero) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombrefichero))) {
@@ -72,5 +108,8 @@ public class Main {
             System.out.println(e.getMessage());
             throw new RuntimeException("Error al escribir el archivo HTML", e);
         }
+
     }
+
+
 }

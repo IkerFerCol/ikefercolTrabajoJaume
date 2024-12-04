@@ -61,20 +61,20 @@ ul {
     text-align: center;
     text-decoration-color: coral;
     display: flex;
-    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
-    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center;
+    gap: 20px;
 }
 
 li {
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
+    align-items: center;
     justify-content: center;
     margin-bottom: 10px;
 }
 
 li img {
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    width: 50px; /* Ajusta el tamaño de la imagen */
+    margin-right: 10px;
+    width: 50px;
     height: auto;
 }
 
